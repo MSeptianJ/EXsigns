@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:ital@1&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* My Code */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat",sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #fafafa;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    color: white;
+    background: rgb(43, 1, 65) url("../img/988.svg") no-repeat 0 center;
+    background-size: contain;
+    background-position-y: center;
+}
+
+#title-box {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: #48036d;
+    color: white;
+    z-index: 3;
+}
+
+.title {
+    position: relative;
+    height: 50px;
+    margin-left: 20px;
+    line-height: 50px;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Russo One", sans-serif;
+    text-shadow: 6px 0 4px royalblue;
+    letter-spacing: 6px;
+}
+
+/* MAIN */
+main {
+    position: relative;
+}
+content-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px 10px;
+    justify-content: center;
+}
+
+content-list:nth-child(2) {
+    padding-top: 50px;
+}
+
+#loading {
+    display: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+    ========
+    FOOTER
+    ========
+*/
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 20px;
+    background-color: #48036d;
+}
+/* CONTACT */
+.contact-container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background: none;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact a {
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.contact span {
+    font-size: 25px;
+    color: rgb(104,193,250);
+}
+.contact p,.contact h2 {
+    display: none;
+}
+
+.flaticon {
+    margin: 20px 0 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(104,193,250);
+}
+
+.flaticon-logo {
+    width: 100px;
+    background: none;
+    margin: 10px;
+}
+
+/* Responsive Tablet */
+@media (min-width: 768px) {
+    /* HEADER */
+    header {
+        background-size: 640px;
+        background-position: center;
+    }
+    content-list {
+        padding: 5px 40px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding-bottom: 10px;
+    }
+
+    /* CONTACT */
+    .contact {
+        display: flex;
+        margin: 0;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+
+    .contact h2, .contact p {
+        display: inline-block;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .contact-content {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive Laptop */
+@media (min-width: 1025px){
+    /* HEADER */
+    header {
+        background-size: 700px;
+    }
+}
+
